@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="http://w2ui.com/src/w2ui-1.4.min.css" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="http://w2ui.com/src/w2ui-1.4.min.js"></script>
+</head>
+<body>
+    <div id="myGrid" style="height: 450px"></div>
+</body>
+<script>
+$('#myGrid').w2grid({ 
+    name   : 'myGrid', 
+    columns: [                
+        { field: 'fname', caption: 'personne', size: '30%' },
+        { field: 'lname', caption: 'colis', size: '30%' },
+        { field: 'email', caption: 'Email', size: '40%' },
+        { field: 'sdate', caption: 'Date envoi', size: '120px' },
+    ],
+    records: [
+        { recid: 1, fname: 'John', lname: '1', email: 'jdoe@gmail.com', sdate: '4/3/2012' },
+        { recid: 2, fname: 'Stuart', lname: '2', email: 'jdoe@gmail.com', sdate: '4/3/2012' },
+        { recid: 3, fname: 'Jin', lname: '3', email: 'jdoe@gmail.com', sdate: '4/3/2012' },
+        { recid: 4, fname: 'Susan', lname: '4', email: 'jdoe@gmail.com', sdate: '4/3/2012' },
+        { recid: 5, fname: 'Kelly', lname: '5', email: 'jdoe@gmail.com', sdate: '4/3/2012' },
+        { recid: 6, fname: 'Francis', lname: '6', email: 'jdoe@gmail.com', sdate: '4/3/2012' },
+        { recid: 7, fname: 'Mark', lname: '7', email: 'jdoe@gmail.com', sdate: '4/3/2012' },
+        { recid: 8, fname: 'Thomas', lname: '8', email: 'jdoe@gmail.com', sdate: '4/3/2012' },
+        { recid: 9, fname: 'Sergei', lname: '9', email: 'jdoe@gmail.com', sdate: '4/3/2012' }
+    ]
+});
+</script>
+</html>
